@@ -37,7 +37,7 @@ var isRelease = argv.indexOf('--release') > -1;
 
 gulp.task('watch', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'images'],
+    ['sass', 'html', 'fonts', 'scripts', 'images', 'api'],
     function(){
       gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
@@ -48,7 +48,7 @@ gulp.task('watch', ['clean'], function(done){
 
 gulp.task('build', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'images'],
+    ['sass', 'html', 'fonts', 'scripts', 'images', 'api'],
     function(){
       buildBrowserify({
         minify: isRelease,
@@ -66,6 +66,11 @@ gulp.task('build', ['clean'], function(done){
 gulp.task('images', function() {
   gulp.src('app/img/**/*.png')
   .pipe(gulp.dest('www/build/img/'));
+});
+
+gulp.task('api', function() {
+  gulp.src('app/providers/**/*.json')
+  .pipe(gulp.dest('www/build/api/'));
 });
 
 gulp.task('sass', buildSass);

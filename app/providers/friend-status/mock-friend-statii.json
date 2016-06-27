@@ -1,0 +1,36 @@
+{"friendStatii": [{
+  "friendName": "Marty McFly",
+  "friendAvatar": "avatar-marty.png",
+  "location": "DeLorean",
+  "timeSince": "17 hrs ago",
+  "beerTitle": "The Crisp",
+  "beerIcon": "beer-the-crisp.png",
+  "brewer": "Sixpoint Brewery",
+  "rating": "4",
+  "comments": [],
+  "toasts": []
+},
+{
+  "friendName": "Sarah Connor",
+  "friendAvatar": "avatar-sarah.png",
+  "location": "Los Angeles, California",
+  "timeSince": "18 hrs ago",
+  "beerTitle": "Low Key",
+  "beerIcon": "beer-low-key.png",
+  "brewer": "Magic Hat Brewing Company",
+  "rating": "3",
+  "comments": [],
+  "toasts": []
+},
+{
+  "friendName": "Dr. Ian Malcolm",
+  "friendAvatar": "avatar-ian.png",
+  "location": "T-Rex",
+  "timeSince": "19 hrs ago",
+  "beerTitle": "Sunny Ridge Pilsner",
+  "beerIcon": "beer-sunny-ridge.png",
+  "brewer": "Jack\"s Abby",
+  "rating": "5",
+  "comments": [],
+  "toasts": []
+}]}
