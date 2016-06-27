@@ -14,14 +14,14 @@
   <div [ngSwitch]="homeSegments">
 
     <div class="friends" *ngSwitchWhen="'friends'">
-      <ion-card>
+      <ion-card *ngFor="let status of statii">
 
         <ion-item>
           <ion-avatar item-left>
-            <img src="build/img/avatar-marty.png">
+            <img src="build/img/{{status.friendAvatar}}">
           </ion-avatar>
-          <h2>Marty McFly</h2>
-          <p>November 5, 1955</p>
+          <h2>{{status.friendName}}</h2>
+          <p>{{status.timeSince}}</p>
         </ion-item>
 
         <ion-card-content>
