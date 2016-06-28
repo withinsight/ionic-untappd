@@ -13,3 +13,34 @@
   '../pages/nearby/nearby',
   '../pages/profile/profile',
   '../pages/search/search';
+
+ion-card {
+  margin-bottom: 30px;
+
+  ion-card-header {
+    padding: 0;
+    background-color: color($colors, light);
+  }
+
+  ion-card-content {
+    padding-bottom: 0;
+  }
+}
+
+ion-card-header {
+  .item {
+    background: transparent;
+  }
+}
+
+ion-card-content {
+  .item {
+    padding-left: 0;
+  }
+}
+
+ion-card-footer {
+  ion-row {
+    background-color: color($colors, light);
+  }
+}

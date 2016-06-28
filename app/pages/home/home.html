@@ -16,43 +16,46 @@
     <div class="friends" *ngSwitchWhen="'friends'">
       <ion-card *ngFor="let status of statii">
 
-        <ion-item>
-          <ion-avatar item-left>
-            <img src="build/img/{{status.friendAvatar}}">
-          </ion-avatar>
-          <h2>{{status.friendName}}</h2>
-          <p>{{status.timeSince}}</p>
-        </ion-item>
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-left>
+              <img src="build/img/{{status.friendAvatar}}">
+            </ion-avatar>
+            <h2>{{status.friendName}}</h2>
+            <p>{{status.location}}</p>
+            <p item-right>{{status.timeSince}}</p>
+          </ion-item>
+        </ion-card-header>
 
         <ion-card-content>
-          <ion-row>
-            <ion-col width-10></ion-col>
+          <ion-item>
+            <ion-avatar item-left>
+              <img src="build/img/{{status.beerIcon}}" />
+            </ion-avatar>
             <ion-col>
-              <h2>The Crisp</h2>
-              <p>by Sixpoint Brewery</p>
+              <h2>{{status.beerTitle}}</h2>
+              <p>by {{status.brewer}}</p>
             </ion-col>
-          </ion-row>
+          </ion-item>
         </ion-card-content>
 
-        <ion-row>
-          <ion-col>
-            <button primary clear small>
-              <ion-icon name="thumbs-up"></ion-icon>
-              <div>12 Likes</div>
-            </button>
-          </ion-col>
-          <ion-col>
-            <button primary clear small>
-              <ion-icon name="text"></ion-icon>
-              <div>4 Comments</div>
-            </button>
-          </ion-col>
-          <ion-col center text-center>
-            <ion-note>
-              11h ago
-            </ion-note>
-          </ion-col>
-        </ion-row>
+        <ion-card-footer>
+          <ion-row>
+            <ion-col light text-center>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+            </ion-col>
+            <ion-col text-center width-20>
+              <ion-icon name="chatboxes"></ion-icon>
+            </ion-col>
+            <ion-col text-center width-20>
+              <ion-icon name="beer"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-card-footer>
 
       </ion-card>
     </div>
