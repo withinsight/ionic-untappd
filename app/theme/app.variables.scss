@@ -31,4 +31,8 @@ $colors: (
   danger:         #f53d3d,
   light:          #f6f5f1,
   dark:           #000,
+  grey-light:     #f7f7f7,
+  grey-dark:      #e6e6e6,
 );
+
+$background-color: color($colors, light);

@@ -16,10 +16,11 @@
 
 ion-card {
   margin-bottom: 30px;
+  background-color: #fff;
 
   ion-card-header {
     padding: 0;
-    background-color: color($colors, light);
+    background-color: color($colors, grey-light);
   }
 
   ion-card-content {
@@ -36,11 +37,17 @@ ion-card-header {
 ion-card-content {
   .item {
     padding-left: 0;
+    background-color: transparent;
   }
 }
 
 ion-card-footer {
   ion-row {
-    background-color: color($colors, light);
+    background-color: color($colors, grey-light);
+  }
+
+  ion-col {
+    border-top: 1px solid color($colors, grey-dark);
+    border-right: 1px solid color($colors, grey-dark);
   }
 }
