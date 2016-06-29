@@ -1,7 +1,28 @@
 <ion-navbar *navbar primary>
   <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
 </ion-navbar>
+<ion-toolbar secondary>
+  <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
+</ion-toolbar>
+<ion-toolbar secondary>
+  <ion-segment [(ngModel)]="searchSegments" light>
+    <ion-segment-button value="recent">Recent</ion-segment-button>
+    <ion-segment-button value="suggested">Suggested</ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
 
 <ion-content class="search">
+
+  <div [ngSwitch]="searchSegments">
+
+    <div class="recent" *ngSwitchWhen="'recent'">
+
+    </div>
+
+    <div class="suggested" *ngSwitchWhen="'suggested'">
+
+    </div>
+
+  </div>
 
 </ion-content>
