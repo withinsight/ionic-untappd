@@ -1,5 +1,10 @@
 <ion-navbar *navbar primary>
   <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+  <ion-buttons end>
+    <button [hidden]="homeSegments != 'groups'">
+      <ion-icon light name="list"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-navbar>
 <ion-toolbar>
   <ion-segment [(ngModel)]="homeSegments" secondary>
@@ -62,8 +67,6 @@
 
     <div class="nearby" *ngSwitchWhen="'nearby'">
       <ion-card *ngFor="let status of nearbyStatii">
-
-
 
         <ion-card-jumbotron [ngStyle]="{'background-image': 'url(build/img/' + status.photo + ')'}">
           <ion-card-jumbotron-overlay>
