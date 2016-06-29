@@ -1,0 +1,39 @@
+{"nearbyStatii": [{
+  "friendName": "Marty McFly",
+  "friendAvatar": "avatar-marty.png",
+  "location": "DeLorean",
+  "timeSince": "17 hrs ago",
+  "beerTitle": "Harpoon IPA",
+  "beerIcon": "beer-harpoon-ipa.png",
+  "brewer": "Harpoon Brewery",
+  "rating": "4",
+  "comments": [],
+  "toasts": [],
+  "photo": "beer-photo-harpoon-ipa.jpg"
+},
+{
+  "friendName": "Sarah Connor",
+  "friendAvatar": "avatar-sarah.png",
+  "location": "Los Angeles, California",
+  "timeSince": "18 hrs ago",
+  "beerTitle": "Rebel IPA",
+  "beerIcon": "beer-rebel-ipa.png",
+  "brewer": "Boston Beer Company",
+  "rating": "3",
+  "comments": [],
+  "toasts": [],
+  "photo": "beer-photo-rebel-ipa.jpg"
+},
+{
+  "friendName": "Dr. Ian Malcolm",
+  "friendAvatar": "avatar-ian.png",
+  "location": "T-Rex",
+  "timeSince": "19 hrs ago",
+  "beerTitle": "Excess IPL",
+  "beerIcon": "beer-excess-ipl.png",
+  "brewer": "Jack\"s Abby",
+  "rating": "5",
+  "comments": [],
+  "toasts": [],
+  "photo": "beer-photo-excess-ipl.jpg"
+}]}
