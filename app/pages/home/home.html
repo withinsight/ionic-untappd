@@ -108,7 +108,13 @@
     </div>
 
     <div class="groups" *ngSwitchWhen="'groups'">
-      Groups
+      <ion-card>
+        <ion-item>
+          <ion-icon primary item-left name="ios-help-circle-outline" style="font-size: 3em"></ion-icon>
+          <h2>You haven't selected a default group.</h2>
+          <p>Tap here to create your first group or select a default.</p>
+        </ion-item>
+      </ion-card>
     </div>
 
   </div>
