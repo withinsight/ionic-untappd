@@ -71,6 +71,10 @@ ion-card-content {
   .item {
     padding-left: 0;
     background-color: transparent;
+
+    ion-icon {
+      font-size: 3em;
+    }
   }
 }
 
