@@ -66,13 +66,15 @@
 
 
         <ion-card-jumbotron [ngStyle]="{'background-image': 'url(build/img/' + status.photo + ')'}">
-          <ion-item>
-            <ion-avatar item-left>
-              <h2>{{status.friendName}}</h2>
-              <p>{{status.location}}</p>
-              <p item-right>{{status.timeSince}}</p>
-            </ion-avatar>
-          </ion-item>
+          <ion-card-jumbotron-overlay>
+            <ion-item>
+              <ion-avatar item-left>
+                <h2>{{status.friendName}}</h2>
+                <p>{{status.location}}</p>
+                <p item-right>{{status.timeSince}}</p>
+              </ion-avatar>
+            </ion-item>
+          </ion-card-jumbotron-overlay>
         </ion-card-jumbotron>
 
         <ion-card-content>
