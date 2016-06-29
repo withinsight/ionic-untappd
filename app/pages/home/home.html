@@ -34,9 +34,9 @@
 
         <ion-card-content class="card-content">
           <ion-item class="card-content-item">
-            <ion-avatar item-left class="card-content-avatar">
+            <ion-thumbnail item-left class="card-content-thumbnail">
               <img src="build/img/{{status.beerIcon}}" />
-            </ion-avatar>
+            </ion-thumbnail>
             <ion-col>
               <h2 class="card-content-title">{{status.beerTitle}}</h2>
               <p>by {{status.brewer}}</p>
@@ -82,9 +82,9 @@
 
         <ion-card-content class="card-content">
           <ion-item class="card-content-item">
-            <ion-avatar item-left class="card-content-avatar">
+            <ion-thumbnail item-left class="card-content-thumbnail">
               <img src="build/img/{{status.beerIcon}}" />
-            </ion-avatar>
+            </ion-thumbnail>
             <ion-col>
               <h2 class="card-content-title">{{status.beerTitle}}</h2>
               <p>by {{status.brewer}}</p>
@@ -111,7 +111,9 @@
       <ion-card class="card">
         <ion-card-content class="card-content">
           <ion-item class="card-content-item">
-            <ion-icon primary item-left name="ios-help-circle-outline" class="card-content-icon"></ion-icon>
+            <ion-thumbnail item-left class="card-content-thumbnail">
+              <ion-icon primary name="ios-help-circle-outline" class="card-content-icon"></ion-icon>
+            </ion-thumbnail>
             <h2 class="cart-content-title">You haven't selected a default group.</h2>
             <p>Tap here to create your first group or select a default.</p>
           </ion-item>
