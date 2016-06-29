@@ -1,0 +1,93 @@
+// *************************************
+//
+//   Cards
+//   -> Ionic Card Component
+//
+// *************************************
+
+// -------------------------------------
+//   Card Basics
+// -------------------------------------
+
+.card {
+  background-color: color($colors, absolute);
+}
+
+.card--margin-bottom-l {
+  margin-bottom: 30px;
+}
+
+// -------------------------------------
+//   Card Headers
+// -------------------------------------
+
+.card-header {
+  padding: 0;
+  background-color: color($colors, grey-light);
+}
+
+.card-header-item {
+  background: transparent;
+}
+
+// -------------------------------------
+//   Card Content
+// -------------------------------------
+
+.card-content {
+  padding: 0 16px;
+}
+
+.card-content-item {
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.card-content-icon.card-content-icon {
+  font-size: 3em;
+}
+
+// -------------------------------------
+//   Card Footers
+// -------------------------------------
+
+.card-footer-row {
+  background-color: color($colors, grey-light);
+}
+
+.card-footer-col {
+  border-top: 1px solid color($colors, grey-dark);
+  border-right: 1px solid color($colors, grey-dark);
+}
+
+// -------------------------------------
+//   Jumbotron Cards
+// -------------------------------------
+
+.card-jumbotron {
+  position: relative;
+  display: block;
+  height: 200px;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-jumbotron-item {
+  background: transparent;
+}
+
+.card-jumbotron-title,
+.card-jumbotron-text {
+  color: color($colors, absolute);
+}
+
+//Angular doesn't appear to support multiple CSS3 background properties in ngStyle, so..
+.card-jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 50%);
+}

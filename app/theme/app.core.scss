@@ -14,81 +14,11 @@
   '../pages/profile/profile',
   '../pages/search/search';
 
+@import
+  'components/cards',
+  'components/lists';
+
 .logo {
   max-width: 100px;
   margin-top: 8px;
-}
-
-ion-card {
-  margin-bottom: 30px;
-  background-color: #fff;
-
-  ion-card-header {
-    padding: 0;
-    background-color: color($colors, grey-light);
-  }
-
-  ion-card-content {
-    padding: 0 16px;
-  }
-}
-
-ion-card-header {
-  .item {
-    background: transparent;
-  }
-}
-
-ion-card-jumbotron {
-  position: relative;
-  display: block;
-  height: 200px;
-  background-position: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .item {
-    background: transparent;
-
-    h2,
-    p {
-      color: #fff;
-    }
-  }
-}
-
-//Angular doesn't appear to support multiple CSS3 background properties in ngStyle, so..
-ion-card-jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 50%);
-}
-
-ion-card-content {
-  .item {
-    padding-left: 0;
-    background-color: transparent;
-
-    ion-icon {
-      font-size: 3em;
-    }
-  }
-}
-
-ion-card-footer {
-  ion-row {
-    background-color: color($colors, grey-light);
-  }
-
-  ion-col {
-    border-top: 1px solid color($colors, grey-dark);
-    border-right: 1px solid color($colors, grey-dark);
-  }
-}
-
-ion-label {
-  white-space: initial;
 }
