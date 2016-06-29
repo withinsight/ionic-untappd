@@ -41,7 +41,7 @@
 
         <ion-card-footer>
           <ion-row>
-            <ion-col light text-center>
+            <ion-col light>
               <ion-icon name="trophy"></ion-icon>
               <ion-icon name="trophy"></ion-icon>
               <ion-icon name="trophy"></ion-icon>
@@ -61,7 +61,43 @@
     </div>
 
     <div class="nearby" *ngSwitchWhen="'nearby'">
-      Nearby
+      <ion-card>
+
+        <ion-card-jumbotron style="background-image: url(build/img/beer-photo-rebel-ipa.jpg)">
+          <ion-item>
+            <ion-avatar item-left>
+              <h2>friendName</h2>
+              <p>location</p>
+              <p item-right>timeSince</p>
+            </ion-avatar>
+          </ion-item>
+        </ion-card-jumbotron>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar item-left>
+              <img src="build/img/beerIcon" />
+            </ion-avatar>
+            <ion-col>
+              <h2>beerTitle</h2>
+              <p>by brewer</p>
+            </ion-col>
+          </ion-item>
+          <p>Comment</p>
+        </ion-card-content>
+
+        <ion-card-footer>
+          <ion-row>
+            <ion-col light>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="trophy"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-card-footer>
+      </ion-card>
     </div>
 
     <div class="groups" *ngSwitchWhen="'groups'">

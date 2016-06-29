@@ -29,13 +29,30 @@ ion-card {
   }
 
   ion-card-content {
-    padding-bottom: 0;
+    padding: 0 16px;
   }
 }
 
 ion-card-header {
   .item {
     background: transparent;
+  }
+}
+
+ion-card-jumbotron {
+  display: block;
+  height: 200px;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .item {
+    background: transparent;
+
+    h2,
+    p {
+      color: #fff;
+    }
   }
 }
 

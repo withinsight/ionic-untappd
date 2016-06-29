@@ -64,7 +64,7 @@ gulp.task('build', ['clean'], function(done){
 });
 
 gulp.task('images', function() {
-  gulp.src('app/img/**/*.png')
+  gulp.src('app/img/**/*.{png,jpg}')
   .pipe(gulp.dest('www/build/img/'));
 });
 
