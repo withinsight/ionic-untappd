@@ -1,39 +1,36 @@
-{"nearbyStatii": [{
+{"friendCheckins": [{
   "name": "Marty McFly",
   "avatar": "avatar-marty.png",
   "location": "DeLorean",
   "timeSince": "17 hrs ago",
-  "beerName": "Harpoon IPA",
-  "beerIcon": "beer-harpoon-ipa.png",
-  "breweryName": "Harpoon Brewery",
+  "beerName": "The Crisp",
+  "beerIcon": "beer-the-crisp.png",
+  "breweryName": "Sixpoint Brewery",
   "rating": "4",
   "comments": [],
-  "toasts": [],
-  "photo": "beer-photo-harpoon-ipa.jpg"
+  "toasts": []
 },
 {
   "name": "Sarah Connor",
   "avatar": "avatar-sarah.png",
   "location": "Los Angeles, California",
   "timeSince": "18 hrs ago",
-  "beerName": "Rebel IPA",
-  "beerIcon": "beer-rebel-ipa.png",
-  "breweryName": "Boston Beer Company",
+  "beerName": "Low Key",
+  "beerIcon": "beer-low-key.png",
+  "breweryName": "Magic Hat Brewing Company",
   "rating": "3",
   "comments": [],
-  "toasts": [],
-  "photo": "beer-photo-rebel-ipa.jpg"
+  "toasts": []
 },
 {
   "name": "Dr. Ian Malcolm",
   "avatar": "avatar-ian.png",
   "location": "T-Rex",
   "timeSince": "19 hrs ago",
-  "beerName": "Excess IPL",
-  "beerIcon": "beer-excess-ipl.png",
+  "beerName": "Sunny Ridge Pilsner",
+  "beerIcon": "beer-sunny-ridge.png",
   "breweryName": "Jack\"s Abby",
   "rating": "5",
   "comments": [],
-  "toasts": [],
-  "photo": "beer-photo-excess-ipl.jpg"
+  "toasts": []
 }]}

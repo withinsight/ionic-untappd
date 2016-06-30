@@ -3,14 +3,14 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class FriendStatus {
+export class NearbyCheckins {
   data: any;
 
   constructor(private http: Http) {
     this.data = null;
   }
 
-  getFriendStatii() {
+  getNearbyCheckins() {
     if (this.data) {
       // already loaded data
       return Promise.resolve(this.data);
@@ -21,12 +21,12 @@ export class FriendStatus {
       // We're using Angular Http provider to request the data,
       // then on the response it'll map the JSON data to a parsed JS object.
       // Next we process the data and resolve the promise with the new data.
-      this.http.get('/build/api/friend-status/mock-friend-statii.json')
+      this.http.get('/build/api/nearby-checkins/mock-nearby-checkins.json')
         .map(res => res.json())
         .subscribe(data => {
           // we've got back the raw data, now generate the core schedule data
           // and save the data for later reference
-          this.data = data.friendStatii;
+          this.data = data.nearbyCheckins;
           resolve(this.data);
         });
     });

@@ -1,30 +1,30 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CheckinDetailPage } from '../checkin-detail/checkin-detail';
-import { FriendStatus } from '../../providers/friend-status/friend-status';
-import { NearbyStatus } from '../../providers/nearby-status/nearby-status';
+import { FriendCheckins } from '../../providers/friend-checkins/friend-checkins';
+import { NearbyCheckins } from '../../providers/nearby-checkins/nearby-checkins';
 
 @Component({
   templateUrl: 'build/pages/home/home.html',
-  providers: [FriendStatus, NearbyStatus]
+  providers: [FriendCheckins, NearbyCheckins]
 })
 
 export class HomePage {
 
   private homeSegments = 'friends';
-  private friendStatii = [];
-  private nearbyStatii = [];
+  private friendCheckins = [];
+  private nearbyCheckins = [];
 
-  constructor(private nav: NavController, private friendStatusService: FriendStatus, private nearbyStatiiService: NearbyStatus) {
-    this.friendStatusService.getFriendStatii().then((statii) => {
-      if (statii) {
-        this.friendStatii = statii;
+  constructor(private nav: NavController, private friendCheckinService: FriendCheckins, private nearbyCheckinService: NearbyCheckins) {
+    this.friendCheckinService.getFriendCheckins().then((checkins) => {
+      if (checkins) {
+        this.friendCheckins = checkins;
       }
     });
 
-    this.nearbyStatiiService.getNearbyStatii().then((statii) => {
-      if (statii) {
-        this.nearbyStatii = statii;
+    this.nearbyCheckinService.getNearbyCheckins().then((checkins) => {
+      if (checkins) {
+        this.nearbyCheckins = checkins;
       }
     });
   }
