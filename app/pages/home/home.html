@@ -19,27 +19,27 @@
   <div [ngSwitch]="homeSegments">
 
     <div class="friends" *ngSwitchWhen="'friends'">
-      <ion-card *ngFor="let status of friendStatii" class="card card--margin-bottom-l">
+      <ion-card *ngFor="let checkin of friendStatii" class="card card--margin-bottom-l">
 
         <ion-card-header class="card-header">
           <ion-item class="card-header-item">
             <ion-avatar item-left class="card-header-avatar">
-              <img src="build/img/{{status.friendAvatar}}">
+              <img src="build/img/{{checkin.avatar}}">
             </ion-avatar>
-            <h2 class="card-header-title">{{status.friendName}}</h2>
-            <p>{{status.location}}</p>
-            <p item-right>{{status.timeSince}}</p>
+            <h2 class="card-header-title">{{checkin.name}}</h2>
+            <p>{{checkin.location}}</p>
+            <p item-right>{{checkin.timeSince}}</p>
           </ion-item>
         </ion-card-header>
 
         <ion-card-content class="card-content">
-          <ion-item class="card-content-item" (click)="viewCheckin(status)">
+          <ion-item class="card-content-item" (click)="viewCheckin(checkin)">
             <ion-thumbnail item-left class="card-content-thumbnail">
-              <img src="build/img/{{status.beerIcon}}" />
+              <img src="build/img/{{checkin.beerIcon}}" />
             </ion-thumbnail>
             <ion-col>
-              <h2 class="card-content-title">{{status.beerTitle}}</h2>
-              <p>by {{status.brewer}}</p>
+              <h2 class="card-content-title">{{checkin.beerName}}</h2>
+              <p>by {{checkin.breweryName}}</p>
             </ion-col>
           </ion-item>
         </ion-card-content>
@@ -66,15 +66,15 @@
     </div>
 
     <div class="nearby" *ngSwitchWhen="'nearby'">
-      <ion-card *ngFor="let status of nearbyStatii" class="card card--margin-bottom-l">
+      <ion-card *ngFor="let checkin of nearbyStatii" class="card card--margin-bottom-l">
 
-        <ion-card-jumbotron class="card-jumbotron" [ngStyle]="{'background-image': 'url(build/img/' + status.photo + ')'}">
+        <ion-card-jumbotron class="card-jumbotron" [ngStyle]="{'background-image': 'url(build/img/' + checkin.photo + ')'}">
           <ion-card-jumbotron-overlay class="card-jumbotron-overlay">
             <ion-item class="card-jumbotron-item">
               <ion-avatar item-left class="card-jumbotron-avatar">
-                <h2 class="card-jumbotron-title">{{status.friendName}}</h2>
-                <p class="card-jumbotron-text">{{status.location}}</p>
-                <p item-right class="card-jumbotron-text">{{status.timeSince}}</p>
+                <h2 class="card-jumbotron-title">{{checkin.friendName}}</h2>
+                <p class="card-jumbotron-text">{{checkin.location}}</p>
+                <p item-right class="card-jumbotron-text">{{checkin.timeSince}}</p>
               </ion-avatar>
             </ion-item>
           </ion-card-jumbotron-overlay>
@@ -83,14 +83,14 @@
         <ion-card-content class="card-content">
           <ion-item class="card-content-item">
             <ion-thumbnail item-left class="card-content-thumbnail">
-              <img src="build/img/{{status.beerIcon}}" />
+              <img src="build/img/{{checkin.beerIcon}}" />
             </ion-thumbnail>
             <ion-col>
-              <h2 class="card-content-title">{{status.beerTitle}}</h2>
-              <p>by {{status.brewer}}</p>
+              <h2 class="card-content-title">{{checkin.beerTitle}}</h2>
+              <p>by {{checkin.brewer}}</p>
             </ion-col>
           </ion-item>
-          <p>{{status.comments}}</p>
+          <p>{{checkin.comments}}</p>
         </ion-card-content>
 
         <ion-card-footer class="card-footer">

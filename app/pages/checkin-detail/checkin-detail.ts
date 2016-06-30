@@ -19,9 +19,9 @@ export class CheckinDetailPage {
 
     this.name = this.navParams.get('checkin').name;
     this.userName = this.navParams.get('checkin').userName;
-    this.userLocation = this.navParams.get('checkin').location;
+    this.userLocation = this.navParams.get('checkin').userLocation;
     this.beerName = this.navParams.get('checkin').beerName;
-    this.breweryName = this.navParams.get('checkin').friendName;
+    this.breweryName = this.navParams.get('checkin').breweryName;
     this.beerStyle = this.navParams.get('checkin').beerStyle;
     this.checkinLocation = this.navParams.get('checkin').location;
     this.checkinLocationCategory = this.navParams.get('checkin').locationCategory;
