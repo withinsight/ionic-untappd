@@ -1,36 +1,54 @@
 {"friendCheckins": [{
   "name": "Marty McFly",
+  "userName": "mcfly",
   "avatar": "avatar-marty.png",
   "location": "DeLorean",
   "timeSince": "17 hrs ago",
   "beerName": "The Crisp",
   "beerIcon": "beer-the-crisp.png",
   "breweryName": "Sixpoint Brewery",
+  "beerStyle": "Pilsner - German",
+  "locationName": "Grand Canyon",
+  "locationAddress": "Arizona",
+  "locationCategory": "National Park",
   "rating": "4",
   "comments": [],
-  "toasts": []
+  "toasts": [],
+  "date": "29 Jun 16"
 },
 {
   "name": "Sarah Connor",
+  "userName": "terminator",
   "avatar": "avatar-sarah.png",
   "location": "Los Angeles, California",
   "timeSince": "18 hrs ago",
   "beerName": "Low Key",
   "beerIcon": "beer-low-key.png",
   "breweryName": "Magic Hat Brewing Company",
+  "beerStyle": "Session / India Session Ale",
+  "locationName": "Statue of Liberty National Monument",
+  "locationAddress": "New York, NY",
+  "locationCategory": "National Park",
   "rating": "3",
   "comments": [],
-  "toasts": []
+  "toasts": [],
+  "date": "27 Jun 16"
 },
 {
   "name": "Dr. Ian Malcolm",
+  "userName": "lunch",
   "avatar": "avatar-ian.png",
   "location": "T-Rex",
   "timeSince": "19 hrs ago",
   "beerName": "Sunny Ridge Pilsner",
   "beerIcon": "beer-sunny-ridge.png",
   "breweryName": "Jack\"s Abby",
+  "beerStyle": "Pilsner - Other",
+  "locationName": "Eiffel Tower",
+  "locationAddress": "Avenue Gustave Eiffel",
+  "locationCategory": "Landmark 324m-high 19th-century tower",
   "rating": "5",
   "comments": [],
-  "toasts": []
+  "toasts": [],
+  "date": "26 Jun 16"
 }]}

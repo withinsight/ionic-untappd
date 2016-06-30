@@ -1,7 +1,98 @@
-<ion-navbar *navbar>
-  <ion-title>checkin-detail</ion-title>
+<ion-navbar *navbar primary>
+  <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+  <ion-buttons end>
+    <button>
+      <ion-icon light name="more"></ion-icon>
+    </button>
+  </ion-buttons>
+
 </ion-navbar>
 
-<ion-content padding class="checkin-detail">
+<ion-content class="checkin-detail">
+
+  <ion-list class="list">
+    <ion-item class="list-item">
+      <ion-thumbnail item-left>
+        <img class="grid-thumbnail-image" src="build/img/{{avatar}}" />
+      </ion-thumbnail>
+      <h2>{{name}}</h2>
+      <p>{{userName}}</p>
+    </ion-item>
+    <ion-item class="list-item">
+      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid class="grid">
+    <ion-row>
+      <ion-col width-60>{{checkinDate}}</ion-col>
+      <ion-col width-20>
+        <button primary block>
+          <ion-icon name="beer" light></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-20>
+        <button primary block>
+          <ion-icon name="chatboxes" light></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item-group>
+    <ion-item-divider class="item-divider" primary>Check-In Details</ion-item-divider>
+  </ion-item-group>
+
+  <ion-card class="card">
+    <ion-card-content class="card-content">
+      <ion-item class="card-content-item">
+        <ion-thumbnail item-left>
+          <img src="build/img/{{beerIcon}}" />
+        </ion-thumbnail>
+        <ion-col>
+          <h2 class="card-content-title">{{beerName}}</h2>
+          <p>by {{breweryName}}</p>
+          <p><strong>Style:</strong> {{beerStyle}}</p>
+        </ion-col>
+        <ion-icon class="card-content-icon--right" name="arrow-forward" primary item-right></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-content class="card-content">
+      <ion-item class="card-content-item">
+        <ion-thumbnail item-left>
+          <ion-icon class="card-content-icon" name="home"></ion-icon>
+        </ion-thumbnail>
+        <ion-col>
+          <h2 class="card-content-title">{{checkinLocationName}}</h2>
+          <p>{{checkinLocationAddress}}</p>
+          <p><strong>Category:</strong> {{checkinLocationCategory}}</p>
+        </ion-col>
+        <ion-icon class="card-content-icon--right" name="arrow-forward" primary item-right></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item-group>
+    <ion-item-divider class="item-divider" primary>Toasts and Comments</ion-item-divider>
+  </ion-item-group>
+
+  <ion-card class="card">
+    <ion-card-content class="card-content card-content--no-padding">
+      <ion-item class="card-content-item">
+        <ion-textarea placeholder="Enter your comment here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-content-padding">
+    <button primary block>Post Comment</button>
+  </div>
 
 </ion-content>
