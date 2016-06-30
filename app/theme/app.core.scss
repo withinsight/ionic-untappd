@@ -15,8 +15,11 @@
   '../pages/search/search';
 
 @import
+  'components/banner',
+  'components/buttons',
   'components/cards',
-  'components/lists';
+  'components/lists',
+  'components/thumbnails';
 
 .logo {
   max-width: 100px;

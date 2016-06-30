@@ -2,29 +2,44 @@
   "beerTitle": "The Crisp",
   "beerIcon": "beer-the-crisp.png",
   "brewer": "Sixpoint Brewery",
-  "beerStyle": "Pilsner - German"
+  "beerStyle": "Pilsner - German",
+  "userAvatar": "avatar-finn.png",
+  "userName": "Finn",
+  "date": "6 Jun 16"
 },
 {
   "beerTitle": "Low Key",
   "beerIcon": "beer-low-key.png",
   "brewer": "Magic Hat Brewing Company",
-  "beerStyle": "IPA - Session/India Session Ale"
+  "beerStyle": "IPA - Session/India Session Ale",
+  "userAvatar": "avatar-finn.png",
+  "userName": "Finn",
+  "date": "29 May 16"
 },
 {
   "beerTitle": "Sunny Ridge Pilsner",
   "beerIcon": "beer-sunny-ridge.png",
   "brewer": "Jack\"s Abby",
-  "beerStyle": "Pilsner - Other"
+  "beerStyle": "Pilsner - Other",
+  "userAvatar": "avatar-finn.png",
+  "userName": "Finn",
+  "date": "29 May 16"
 },
 {
   "beerTitle": "Fire Rock Pale Ale",
   "beerIcon": "beer-fire-rock.png",
   "brewer": "Kona Brewing Company",
-  "beerStyle": "Pale Ale - American"
+  "beerStyle": "Pale Ale - American",
+  "userAvatar": "avatar-finn.png",
+  "userName": "Finn",
+  "date": "14 Feb 16"
 },
 {
   "beerTitle": "Big Swell IPA",
   "beerIcon": "beer-big-swell.png",
   "brewer": "Maui Brewing Company",
-  "beerStyle": "IPA - American"
+  "beerStyle": "IPA - American",
+  "userAvatar": "avatar-finn.png",
+  "userName": "Finn",
+  "date": "11 Feb 16"
 }]}

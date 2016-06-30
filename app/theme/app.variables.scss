@@ -26,14 +26,16 @@
 // are different per mode.
 
 $colors: (
-  primary:        #fc0,
-  secondary:      #93691f,
-  danger:         #f53d3d,
-  light:          #f6f5f1,
-  dark:           #000,
-  grey-light:     #f7f7f7,
-  grey-dark:      #e6e6e6,
-  absolute:       #fff,
+  primary:          #fc0,
+  secondary:        #93691f,
+  danger:           #f53d3d,
+  light:            #f6f5f1,
+  light-dark:       darken(#f6f5f1, 5%),
+  light-darker:     darken(#f6f5f1, 10%),
+  dark:             #000,
+  grey-light:       #f7f7f7,
+  grey-dark:        #e6e6e6,
+  absolute:         #fff,
 );
 
 $background-color: color($colors, light);
