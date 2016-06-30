@@ -68,7 +68,7 @@
     <div class="nearby" *ngSwitchWhen="'nearby'">
       <ion-card *ngFor="let checkin of nearbyCheckins" class="card card--margin-bottom-l">
 
-        <ion-card-jumbotron class="card-jumbotron" [ngStyle]="{'background-image': 'url(build/img/' + checkin.photo + ')'}">
+        <ion-card-jumbotron (click)="viewCheckin(checkin)" class="card-jumbotron" [ngStyle]="{'background-image': 'url(build/img/' + checkin.photo + ')'}">
           <ion-card-jumbotron-overlay class="card-jumbotron-overlay">
             <ion-item class="card-jumbotron-item">
               <ion-avatar item-left class="card-jumbotron-avatar">
@@ -81,7 +81,7 @@
         </ion-card-jumbotron>
 
         <ion-card-content class="card-content">
-          <ion-item class="card-content-item">
+          <ion-item class="card-content-item" (click)="viewCheckin(checkin)">
             <ion-thumbnail item-left class="card-content-thumbnail">
               <img src="build/img/{{checkin.beerIcon}}" />
             </ion-thumbnail>
