@@ -1,23 +1,23 @@
 {"suggestedBeers": [{
-  "beerTitle": "Cape Cod IPA",
+  "beerName": "Cape Cod IPA",
   "beerIcon": "beer-cape-cod-ipa.png",
-  "brewer": "Cape Cod Beer",
+  "breweryName": "Cape Cod Beer",
   "beerStyle": "IPA - American",
   "abv": "6%",
   "ibu": "70"
 },
 {
-  "beerTitle": "The Lazy Frog",
+  "beerName": "The Lazy Frog",
   "beerIcon": "beer-lazy-frog.png",
-  "brewer": "Offshore Ale Co.",
+  "breweryName": "Offshore Ale Co.",
   "beerStyle": "IPA - American",
   "abv": "7%",
   "ibu": "70"
 },
 {
-  "beerTitle": "Trillikini",
+  "beerName": "Trillikini",
   "beerIcon": "beer-trillikini.png",
-  "brewer": "Trillium Brewing Company",
+  "breweryName": "Trillium Brewing Company",
   "beerStyle": "IPA - American",
   "abv": "3.3%",
   "ibu": "N/A"
