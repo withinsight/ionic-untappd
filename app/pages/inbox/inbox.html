@@ -13,11 +13,33 @@
   <div [ngSwitch]="inboxSegments">
 
     <div class="notifications" *ngSwitchWhen="'notifications'">
-      Notifications
+
+      <ion-card class="card" *ngFor="let notification of notifications">
+        <ion-card-content class="card-content">
+          <ion-item class="card-content-item">
+            <ion-thumbnail item-left>
+              <img src="build/img/{{notification.avatar}}" />
+            </ion-thumbnail>
+            <ion-col>
+              <p><strong>{{notification.name}}</strong> toasted your check-in to <strong>{{notification.beer}}</strong> by <strong>{{notification.brewer}}</strong></p>
+              <p>{{notification.date}}</p>
+            </ion-col>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
     </div>
 
     <div class="news" *ngSwitchWhen="'news'">
-      News
+
+      <ion-card class="card" *ngFor="let article of news">
+        <ion-card-content class="card-content">
+          <h2 class="card-content-title"><strong>{{article.title}}</strong></h2>
+          <p>{{article.excerpt}}</p>
+          <p>{{article.date}}</p>
+        </ion-card-content>
+      </ion-card>
+
     </div>
 
   </div>

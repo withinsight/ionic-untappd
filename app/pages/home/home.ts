@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FriendStatus } from '../../providers/friend-status/friend-status';
-import {NearbyStatus} from '../../providers/nearby-status/nearby-status';
+import { NearbyStatus } from '../../providers/nearby-status/nearby-status';
 
 @Component({
   templateUrl: 'build/pages/home/home.html',

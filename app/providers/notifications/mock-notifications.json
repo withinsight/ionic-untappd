@@ -1,0 +1,21 @@
+{"notifications": [{
+  "name": "Marty",
+  "avatar": "avatar-marty.png",
+  "beer": "The Crisp",
+  "brewer": "Sixpoint Brewery",
+  "date": "6 Jun 16"
+},
+{
+  "name": "Sarah",
+  "avatar": "avatar-sarah.png",
+  "beer": "Low Key",
+  "brewer": "Magic Hat Brewing Company",
+  "date": "29 May 16"
+},
+{
+  "name": "Sixpoint Brewery",
+  "avatar": "brewery-sixpoint.png",
+  "beer": "Sweet Action",
+  "brewer": "Sixpoint Brewery",
+  "date": "28 Dec 15"
+}]}
