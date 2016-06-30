@@ -21,7 +21,7 @@ export class News {
       // We're using Angular Http provider to request the data,
       // then on the response it'll map the JSON data to a parsed JS object.
       // Next we process the data and resolve the promise with the new data.
-      this.http.get('/build/api/news/mock-news.json')
+      this.http.get('build/api/news/mock-news.json')
         .map(res => res.json())
         .subscribe(data => {
           // we've got back the raw data, now generate the core schedule data
