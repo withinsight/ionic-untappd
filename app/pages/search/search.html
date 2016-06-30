@@ -9,7 +9,7 @@
 <ion-toolbar secondary>
   <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
 </ion-toolbar>
-<ion-toolbar secondary>
+<ion-toolbar secondary class="toolbar--short">
   <ion-segment [(ngModel)]="searchSegments" light>
     <ion-segment-button value="recent">Recent</ion-segment-button>
     <ion-segment-button value="suggested">Suggested</ion-segment-button>

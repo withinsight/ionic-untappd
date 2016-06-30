@@ -29,3 +29,29 @@
 // App iOS Only Sass
 // --------------------------------------------------
 // CSS that should only apply to the iOS app
+
+.toolbar {
+  .segment-button {
+    max-width: initial;
+    height: initial;
+    border: 0;
+    border-radius: 0;
+    line-height: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+ion-segment[light],
+.toolbar[secondary] {
+  .segment-button {
+    &.segment-activated {
+      color: color($colors, absolute);
+      background-color: darken(color($colors, secondary), 5%);
+    }
+  }
+}
+
+.toolbar--short {
+  min-height: 30px;
+}
