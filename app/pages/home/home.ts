@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CheckinDetailPage } from '../checkin-detail/checkin-detail';
 import { FriendStatus } from '../../providers/friend-status/friend-status';
 import { NearbyStatus } from '../../providers/nearby-status/nearby-status';
 
@@ -14,7 +15,7 @@ export class HomePage {
   private friendStatii = [];
   private nearbyStatii = [];
 
-  constructor(private navController: NavController, private friendStatusService: FriendStatus, private nearbyStatiiService: NearbyStatus) {
+  constructor(private nav: NavController, private friendStatusService: FriendStatus, private nearbyStatiiService: NearbyStatus) {
     this.friendStatusService.getFriendStatii().then((statii) => {
       if (statii) {
         this.friendStatii = statii;
@@ -25,6 +26,12 @@ export class HomePage {
       if (statii) {
         this.nearbyStatii = statii;
       }
+    });
+  }
+
+  viewCheckin(checkin) {
+    this.nav.push(CheckinDetailPage, {
+      checkin: checkin
     });
   }
 }

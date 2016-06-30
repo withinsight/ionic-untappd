@@ -33,7 +33,7 @@
         </ion-card-header>
 
         <ion-card-content class="card-content">
-          <ion-item class="card-content-item">
+          <ion-item class="card-content-item" (click)="viewCheckin(status)">
             <ion-thumbnail item-left class="card-content-thumbnail">
               <img src="build/img/{{status.beerIcon}}" />
             </ion-thumbnail>
