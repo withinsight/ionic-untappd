@@ -1,0 +1,30 @@
+{"recentBeers": [{
+  "beerTitle": "The Crisp",
+  "beerIcon": "beer-the-crisp.png",
+  "brewer": "Sixpoint Brewery",
+  "beerStyle": "Pilsner - German"
+},
+{
+  "beerTitle": "Low Key",
+  "beerIcon": "beer-low-key.png",
+  "brewer": "Magic Hat Brewing Company",
+  "beerStyle": "IPA - Session/India Session Ale"
+},
+{
+  "beerTitle": "Sunny Ridge Pilsner",
+  "beerIcon": "beer-sunny-ridge.png",
+  "brewer": "Jack\"s Abby",
+  "beerStyle": "Pilsner - Other"
+},
+{
+  "beerTitle": "Fire Rock Pale Ale",
+  "beerIcon": "beer-fire-rock.png",
+  "brewer": "Kona Brewing Company",
+  "beerStyle": "Pale Ale - American"
+},
+{
+  "beerTitle": "Big Swell IPA",
+  "beerIcon": "beer-big-swell.png",
+  "brewer": "Maui Brewing Company",
+  "beerStyle": "IPA - American"
+}]}
