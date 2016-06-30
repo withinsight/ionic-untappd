@@ -1,5 +1,10 @@
 <ion-navbar *navbar primary>
   <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+  <ion-buttons end>
+    <button>
+      <ion-icon light name="barcode"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-navbar>
 <ion-toolbar secondary>
   <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
