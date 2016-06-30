@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-/*
-  Generated class for the InboxPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   templateUrl: 'build/pages/inbox/inbox.html',
 })
+
 export class InboxPage {
+  private inboxSegments = 'notifications';
+
   constructor(private nav: NavController) {}
 }

@@ -1,7 +1,25 @@
 <ion-navbar *navbar primary>
   <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
 </ion-navbar>
+<ion-toolbar secondary>
+  <ion-segment [(ngModel)]="inboxSegments" light>
+    <ion-segment-button value="notifications">Notifications</ion-segment-button>
+    <ion-segment-button value="news">News</ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
 
 <ion-content class="inbox">
+
+  <div [ngSwitch]="inboxSegments">
+
+    <div class="notifications" *ngSwitchWhen="'notifications'">
+      Notifications
+    </div>
+
+    <div class="news" *ngSwitchWhen="'news'">
+      News
+    </div>
+
+  </div>
 
 </ion-content>
