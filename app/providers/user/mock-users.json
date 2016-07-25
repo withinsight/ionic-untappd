@@ -1,0 +1,27 @@
+{"users": [{
+  "avatar": "avatar-marty.png",
+  "name": "Marty McFly",
+  "userName": "mcfly",
+  "location": "Delorean",
+  "checkins": "546",
+  "distinctBeers": "321",
+  "totalBadges": "70"
+},
+{
+  "avatar": "avatar-sarah.png",
+  "name": "Sarah Connor",
+  "userName": "terminator",
+  "location": "Los Angeles, California",
+  "checkins": "834",
+  "distinctBeers": "534",
+  "totalBadges": "121"
+},
+{
+  "avatar": "avatar-ian.png",
+  "name": "Dr. Ian Malcolm",
+  "userName": "lunch",
+  "location": "T-Rex",
+  "checkins": "211",
+  "distinctBeers": "96",
+  "totalBadges": "34"
+}]}

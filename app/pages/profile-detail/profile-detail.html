@@ -12,10 +12,10 @@
   <ion-list class="list">
     <ion-item class="list-item">
       <ion-thumbnail item-left>
-        <img class="grid-thumbnail-image" src="build/img/{{avatar}}" />
+        <img class="grid-thumbnail-image" src="build/img/{{user.avatar}}" />
       </ion-thumbnail>
-      <h2>{{name}}</h2>
-      <p>{{userName}}</p>
+      <h2>{{user.name}}</h2>
+      <p>{{user.userName}}</p>
     </ion-item>
   </ion-list>
 
@@ -24,19 +24,19 @@
       <ion-col class="grid-col" width-33>
         <ion-banner class="banner">
           <span class="banner-label">check-ins:</span>
-          <span class="banner-value">597</span>
+          <span class="banner-value">{{user.checkins}}</span>
         </ion-banner>
       </ion-col>
       <ion-col class="grid-col" width-33>
         <ion-banner class="banner">
           <span class="banner-label">distinct beers:</span>
-          <span class="banner-value">191</span>
+          <span class="banner-value">{{user.distinctBeers}}</span>
         </ion-banner>
       </ion-col>
       <ion-col class="grid-col" width-33>
         <ion-banner class="banner">
           <span class="banner-label">total badges:</span>
-          <span class="banner-value">95</span>
+          <span class="banner-value">{{user.totalBadges}}</span>
         </ion-banner>
       </ion-col>
     </ion-row>
