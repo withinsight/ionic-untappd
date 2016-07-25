@@ -1,13 +1,160 @@
-<!--
-  Generated template for the ProfileDetailPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-navbar *navbar>
-  <ion-title>profile-detail</ion-title>
+<ion-navbar *navbar primary>
+  <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+  <ion-buttons end>
+    <button>
+      <ion-icon light name="more"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-navbar>
 
-<ion-content padding class="profile-detail">
-  
+<ion-content class="profile">
+
+  <ion-list class="list">
+    <ion-item class="list-item">
+      <ion-thumbnail item-left>
+        <img class="grid-thumbnail-image" src="build/img/{{avatar}}" />
+      </ion-thumbnail>
+      <h2>{{name}}</h2>
+      <p>{{userName}}</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid class="grid">
+    <ion-row class="grid-row">
+      <ion-col class="grid-col" width-33>
+        <ion-banner class="banner">
+          <span class="banner-label">check-ins:</span>
+          <span class="banner-value">597</span>
+        </ion-banner>
+      </ion-col>
+      <ion-col class="grid-col" width-33>
+        <ion-banner class="banner">
+          <span class="banner-label">distinct beers:</span>
+          <span class="banner-value">191</span>
+        </ion-banner>
+      </ion-col>
+      <ion-col class="grid-col" width-33>
+        <ion-banner class="banner">
+          <span class="banner-label">total badges:</span>
+          <span class="banner-value">95</span>
+        </ion-banner>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="card">
+    <ion-grid class="grid">
+      <ion-row class="grid-row">
+        <ion-col class="grid-col" width-20>
+          <ion-thumbnail class="grid-thumbnail">
+            <img class="grid-thumbnail-image" src="build/img/beer-photo-big-swell.png" />
+          </ion-thumbnail>
+        </ion-col>
+        <ion-col class="grid-col" width-20>
+          <ion-thumbnail class="grid-thumbnail">
+            <img class="grid-thumbnail-image" src="build/img/beer-photo-bad-martha.png" />
+          </ion-thumbnail>
+        </ion-col>
+        <ion-col class="grid-col" width-20>
+          <ion-thumbnail class="grid-thumbnail">
+            <img class="grid-thumbnail-image" src="build/img/beer-photo-three-eyed-raven.png" />
+          </ion-thumbnail>
+        </ion-col>
+        <ion-col class="grid-col" width-20>
+          <ion-thumbnail class="grid-thumbnail">
+            <img class="grid-thumbnail-image" src="build/img/beer-photo-karavelle-weiss.png" />
+          </ion-thumbnail>
+        </ion-col>
+        <ion-col class="grid-col" width-20>
+          <ion-thumbnail class="grid-thumbnail">
+            <img class="grid-thumbnail-image" src="build/img/beer-photo-shock-top-belgian-white.png" />
+          </ion-thumbnail>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-item>
+      See All Photos
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        Beer List
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item>
+        Badges
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item>
+        Wish List
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item>
+        Friends
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item>
+        Venues
+        <ion-icon name="arrow-forward" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-item-group>
+    <ion-item-divider class="item-divider" primary>Recent Activity</ion-item-divider>
+  </ion-item-group>
+
+  <ion-card *ngFor="let checkin of userCheckins" class="card card--margin-bottom-l">
+
+    <ion-card-header class="card-header">
+      <ion-item class="card-header-item">
+        <ion-avatar item-left class="card-header-avatar">
+          <img src="build/img/{{checkin.userAvatar}}">
+        </ion-avatar>
+        <h2 class="card-header-title">{{checkin.userName}}</h2>
+        <p item-right>{{checkin.date}}</p>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content class="card-content">
+      <ion-item class="card-content-item">
+        <ion-thumbnail item-left class="card-content-thumbnail">
+          <img src="build/img/{{checkin.beerIcon}}" />
+        </ion-thumbnail>
+        <ion-col>
+          <h2 class="card-content-title">{{checkin.beerName}}</h2>
+          <p>by {{checkin.breweryName}}</p>
+        </ion-col>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-footer class="card-footer">
+      <ion-row class="card-footer-row">
+        <ion-col light class="card-footer-col">
+          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+        </ion-col>
+        <ion-col text-center width-20 class="card-footer-col">
+          <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
+        </ion-col>
+        <ion-col text-center width-20 class="card-footer-col">
+          <ion-icon name="beer" class="card-footer-icon"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-card-footer>
+
+  </ion-card>
+
+  <div class="ion-content-padding">
+    <button primary block>See More Checkins</button>
+  </div>
+
 </ion-content>

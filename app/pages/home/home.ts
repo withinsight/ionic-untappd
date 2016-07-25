@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CheckinDetailPage } from '../checkin-detail/checkin-detail';
+import { ProfileDetailPage } from '../profile-detail/profile-detail';
 import { FriendCheckins } from '../../providers/friend-checkins/friend-checkins';
 import { NearbyCheckins } from '../../providers/nearby-checkins/nearby-checkins';
 
@@ -31,6 +32,12 @@ export class HomePage {
 
   viewCheckin(checkin) {
     this.nav.push(CheckinDetailPage, {
+      checkin: checkin
+    });
+  }
+
+  viewProfile(checkin) {
+    this.nav.push(ProfileDetailPage, {
       checkin: checkin
     });
   }

@@ -22,7 +22,7 @@
       <ion-card *ngFor="let checkin of friendCheckins" class="card card--margin-bottom-l">
 
         <ion-card-header class="card-header">
-          <ion-item class="card-header-item">
+          <ion-item class="card-header-item" (click)="viewProfile(checkin)">
             <ion-avatar item-left class="card-header-avatar">
               <img src="build/img/{{checkin.avatar}}">
             </ion-avatar>
