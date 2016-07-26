@@ -15,6 +15,7 @@
   '../pages/search/search';
 
 @import
+  'components/badges',
   'components/banner',
   'components/buttons',
   'components/cards',
@@ -28,4 +29,8 @@
 
 .ion-content-padding {
   padding: 0 10px;
+}
+
+.size-12 {
+  font-size: 12px;
 }

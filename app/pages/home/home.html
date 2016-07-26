@@ -19,50 +19,54 @@
   <div [ngSwitch]="homeSegments">
 
     <div class="friends" *ngSwitchWhen="'friends'">
-      <ion-card *ngFor="let checkin of friendCheckins" class="card card--margin-bottom-l">
+      <div *ngFor="let checkin of friendCheckins">
+        <ion-card class="card card--margin-bottom-l">
 
-        <ion-card-header class="card-header">
-          <ion-item class="card-header-item" (click)="viewProfile(checkin)">
-            <ion-avatar item-left class="card-header-avatar">
-              <img src="build/img/{{checkin.avatar}}">
-            </ion-avatar>
-            <h2 class="card-header-title">{{checkin.name}}</h2>
-            <p>{{checkin.location}}</p>
-            <p item-right>{{checkin.timeSince}}</p>
-          </ion-item>
-        </ion-card-header>
+          <ion-card-header class="card-header">
+            <ion-item class="card-header-item" (click)="viewProfile(checkin)">
+              <ion-avatar item-left class="card-header-avatar">
+                <img src="build/img/{{checkin.avatar}}">
+              </ion-avatar>
+              <h2 class="card-header-title">{{checkin.name}}</h2>
+              <p>{{checkin.location}}</p>
+              <p item-right>{{checkin.timeSince}}</p>
+            </ion-item>
+          </ion-card-header>
 
-        <ion-card-content class="card-content">
-          <ion-item class="card-content-item" (click)="viewCheckin(checkin)">
-            <ion-thumbnail item-left class="card-content-thumbnail">
-              <img src="build/img/{{checkin.beerIcon}}" />
-            </ion-thumbnail>
-            <ion-col>
-              <h2 class="card-content-title">{{checkin.beerName}}</h2>
-              <p>by {{checkin.breweryName}}</p>
-            </ion-col>
-          </ion-item>
-        </ion-card-content>
+          <ion-card-content class="card-content">
+            <ion-item class="card-content-item" (click)="viewCheckin(checkin)">
+              <ion-thumbnail item-left class="card-content-thumbnail">
+                <img src="build/img/{{checkin.beerIcon}}" />
+              </ion-thumbnail>
+              <ion-col>
+                <h2 class="card-content-title">{{checkin.beerName}}</h2>
+                <p>by {{checkin.breweryName}}</p>
+              </ion-col>
+            </ion-item>
+          </ion-card-content>
 
-        <ion-card-footer class="card-footer">
-          <ion-row class="card-footer-row">
-            <ion-col light class="card-footer-col">
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-            </ion-col>
-            <ion-col text-center width-20 class="card-footer-col">
-              <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
-            </ion-col>
-            <ion-col text-center width-20 class="card-footer-col">
-              <ion-icon name="beer" class="card-footer-icon"></ion-icon>
-            </ion-col>
-          </ion-row>
-        </ion-card-footer>
-
-      </ion-card>
+          <ion-card-footer class="card-footer">
+            <ion-row class="card-footer-row">
+              <ion-col light class="card-footer-col">
+                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+              </ion-col>
+              <ion-col text-center width-20 class="card-footer-col">
+                <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
+              </ion-col>
+              <ion-col text-center width-20 class="card-footer-col" (click)="toastCheckin(checkin)">
+                <ion-icon name="beer" class="card-footer-icon"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-card-footer>
+        </ion-card>
+        <p class="badge-toast small">
+          <ion-badge absolute><ion-icon primary name="beer" class="size-12"></ion-icon></ion-badge> {{checkin.toasts[0]}} has toasted this
+        </p>
+      </div>
     </div>
 
     <div class="nearby" *ngSwitchWhen="'nearby'">

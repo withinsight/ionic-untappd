@@ -1,0 +1,17 @@
+// *************************************
+//
+//   Badges
+//   -> Ionic Badge Component
+//
+// *************************************
+
+.badge-absolute {
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.badge-toast {
+  position: relative;
+  top: -15px;
+  left: 20px;
+  font-size: 1.2rem;
+}

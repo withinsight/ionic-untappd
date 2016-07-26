@@ -41,4 +41,8 @@ export class HomePage {
       checkin: checkin
     });
   }
+
+  toastCheckin(checkin) {
+
+  }
 }
