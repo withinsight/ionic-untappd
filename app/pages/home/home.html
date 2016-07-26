@@ -58,13 +58,13 @@
                 <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
               </ion-col>
               <ion-col text-center width-20 class="card-footer-col" (click)="toastCheckin(checkin)">
-                <ion-icon name="beer" class="card-footer-icon"></ion-icon>
+                <ion-icon name="beer" class="card-footer-icon" [ngClass]="{'toasted primary': checkin.toasted}"></ion-icon>
               </ion-col>
             </ion-row>
           </ion-card-footer>
         </ion-card>
-        <p class="badge-toast small">
-          <ion-badge absolute><ion-icon primary name="beer" class="size-12"></ion-icon></ion-badge> {{checkin.toasts[0]}} has toasted this
+        <p class="badge-toast small" [hidden]="!checkin.toasted">
+          <ion-badge absolute><ion-icon primary name="beer" class="size-12"></ion-icon></ion-badge> <strong>{{checkin.toasts[0]}}</strong> has toasted this
         </p>
       </div>
     </div>

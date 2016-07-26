@@ -34,3 +34,11 @@
 .size-12 {
   font-size: 12px;
 }
+
+.primary {
+  color: color($colors, primary);
+}
+
+.toasted {
+  transform: rotate(15deg);
+}

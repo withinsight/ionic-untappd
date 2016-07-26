@@ -14,7 +14,8 @@
   "rating": "4",
   "comments": [],
   "toasts": [],
-  "date": "29 Jun 16"
+  "date": "29 Jun 16",
+  "toasted": false
 },
 {
   "name": "Sarah Connor",
@@ -32,7 +33,8 @@
   "rating": "3",
   "comments": [],
   "toasts": [],
-  "date": "27 Jun 16"
+  "date": "27 Jun 16",
+  "toasted": false
 },
 {
   "name": "Dr. Ian Malcolm",
@@ -50,5 +52,6 @@
   "rating": "5",
   "comments": [],
   "toasts": [],
-  "date": "26 Jun 16"
+  "date": "26 Jun 16",
+  "toasted": false
 }]}
