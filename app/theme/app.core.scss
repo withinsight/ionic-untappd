@@ -42,3 +42,8 @@
 .toasted {
   transform: rotate(15deg);
 }
+
+ion-icon[extra-small] {
+  min-height: .9em;
+  font-size: .9em;
+}

@@ -30,6 +30,18 @@
   background: transparent;
 }
 
+.card-header-icon-badge {
+  position: absolute;
+  top: -1px;
+  right: 5px;
+}
+
+.card-header-icon-badge--second {
+  position: absolute;
+  top: -1px;
+  right: 12px;
+}
+
 // -------------------------------------
 //   Card Content
 // -------------------------------------
