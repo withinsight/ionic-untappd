@@ -5,7 +5,8 @@
   "beerStyle": "Pilsner - German",
   "avatar": "avatar-finn.png",
   "name": "Finn",
-  "date": "6 Jun 16"
+  "date": "6 Jun 16",
+  "rating": 5
 },
 {
   "beerName": "Low Key",
@@ -14,7 +15,8 @@
   "beerStyle": "IPA - Session/India Session Ale",
   "avatar": "avatar-finn.png",
   "name": "Finn",
-  "date": "29 May 16"
+  "date": "29 May 16",
+  "rating": 4
 },
 {
   "beerName": "Sunny Ridge Pilsner",
@@ -23,7 +25,8 @@
   "beerStyle": "Pilsner - Other",
   "avatar": "avatar-finn.png",
   "name": "Finn",
-  "date": "29 May 16"
+  "date": "29 May 16",
+  "rating": 4
 },
 {
   "beerName": "Fire Rock Pale Ale",
@@ -32,7 +35,8 @@
   "beerStyle": "Pale Ale - American",
   "avatar": "avatar-finn.png",
   "name": "Finn",
-  "date": "14 Feb 16"
+  "date": "14 Feb 16",
+  "rating": 4
 },
 {
   "beerName": "Big Swell IPA",
@@ -41,5 +45,6 @@
   "beerStyle": "IPA - American",
   "avatar": "avatar-finn.png",
   "name": "Finn",
-  "date": "11 Feb 16"
+  "date": "11 Feb 16",
+  "rating": 3
 }]}

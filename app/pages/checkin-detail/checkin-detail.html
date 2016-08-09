@@ -19,11 +19,11 @@
       <p>{{userName}}</p>
     </ion-item>
     <ion-item class="list-item">
-      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
-      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
-      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
-      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
-      <ion-icon name="trophy" class="list-item-icon"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon" [attr.primary]="beerRating > 0 ? true : null"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon" [attr.primary]="beerRating > 1 ? true : null"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon" [attr.primary]="beerRating > 2 ? true : null"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon" [attr.primary]="beerRating > 3 ? true : null"></ion-icon>
+      <ion-icon name="trophy" class="list-item-icon" [attr.primary]="beerRating > 4 ? true : null"></ion-icon>
     </ion-item>
   </ion-list>
 

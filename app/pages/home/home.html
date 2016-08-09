@@ -48,11 +48,11 @@
           <ion-card-footer class="card-footer">
             <ion-row class="card-footer-row">
               <ion-col light class="card-footer-col">
-                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-                <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 0 ? true : null"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 1 ? true : null"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 2 ? true : null"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 3 ? true : null"></ion-icon>
+                <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 4 ? true : null"></ion-icon>
               </ion-col>
               <ion-col text-center width-20 class="card-footer-col">
                 <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
@@ -100,11 +100,11 @@
         <ion-card-footer class="card-footer">
           <ion-row class="card-footer-row">
             <ion-col light class="card-footer-col">
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-              <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+              <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 0 ? true : null"></ion-icon>
+              <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 1 ? true : null"></ion-icon>
+              <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 2 ? true : null"></ion-icon>
+              <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 3 ? true : null"></ion-icon>
+              <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 4 ? true : null"></ion-icon>
             </ion-col>
           </ion-row>
         </ion-card-footer>

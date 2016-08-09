@@ -14,6 +14,7 @@ export class CheckinDetailPage {
   private breweryName;
   private beerIcon;
   private beerStyle;
+  private beerRating;
   private checkinDate;
   private checkinLocationName;
   private checkinLocationAddress;
@@ -29,11 +30,12 @@ export class CheckinDetailPage {
     this.breweryName = this.navParams.get('checkin').breweryName;
     this.beerIcon = this.navParams.get('checkin').beerIcon;
     this.beerStyle = this.navParams.get('checkin').beerStyle;
+    this.beerRating = this.navParams.get('checkin').rating;
     this.checkinDate = this.navParams.get('checkin').date;
     this.checkinLocationName = this.navParams.get('checkin').locationName;
     this.checkinLocationAddress = this.navParams.get('checkin').locationAddress;
     this.checkinLocationCategory = this.navParams.get('checkin').locationCategory;
-
+    
   }
 
   flagAction() {

@@ -119,9 +119,9 @@
     <ion-card-header class="card-header">
       <ion-item class="card-header-item">
         <ion-avatar item-left class="card-header-avatar">
-          <img src="build/img/{{checkin.userAvatar}}">
+          <img src="build/img/{{checkin.avatar}}">
         </ion-avatar>
-        <h2 class="card-header-title">{{checkin.userName}}</h2>
+        <h2 class="card-header-title">{{checkin.name}}</h2>
         <p item-right>{{checkin.date}}</p>
       </ion-item>
     </ion-card-header>
@@ -141,11 +141,11 @@
     <ion-card-footer class="card-footer">
       <ion-row class="card-footer-row">
         <ion-col light class="card-footer-col">
-          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
-          <ion-icon name="trophy" class="card-footer-icon"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 0 ? true : null"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 1 ? true : null"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 2 ? true : null"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 3 ? true : null"></ion-icon>
+          <ion-icon name="trophy" class="card-footer-icon" [attr.primary]="checkin.rating > 4 ? true : null"></ion-icon>
         </ion-col>
         <ion-col text-center width-20 class="card-footer-col">
           <ion-icon name="chatboxes" class="card-footer-icon"></ion-icon>
