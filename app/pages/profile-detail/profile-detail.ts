@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, NavController } from 'ionic-angular';
+import { NavParams, NavController, ActionSheet } from 'ionic-angular';
 import { User } from '../../providers/user/user';
 
 @Component({
@@ -21,4 +21,32 @@ export class ProfileDetailPage {
       }
     });
   }
+
+  friendActions() {
+    let actionSheet = ActionSheet.create({
+      title: 'What would you like to do?',
+      buttons: [
+        {
+          text: 'Remove Friendship',
+          role: 'destructive',
+          handler: () => {
+            console.log('Remove Friendship clicked');
+          }
+        },{
+          text: 'Add to Group',
+          handler: () => {
+            console.log('Add to Group clicked');
+          }
+        },{
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+  this.nav.present(actionSheet);
+  }
+
 }

@@ -35,7 +35,7 @@ export class CheckinDetailPage {
     this.checkinLocationName = this.navParams.get('checkin').locationName;
     this.checkinLocationAddress = this.navParams.get('checkin').locationAddress;
     this.checkinLocationCategory = this.navParams.get('checkin').locationCategory;
-    
+
   }
 
   flagAction() {
@@ -56,6 +56,6 @@ export class CheckinDetailPage {
         }
       ]
     });
-    this.nav.present(actionSheet);
-    }
+  this.nav.present(actionSheet);
+  }
 }
