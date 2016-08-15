@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CheckinDetailPage } from '../checkin-detail/checkin-detail';
 import { ProfileDetailPage } from '../profile-detail/profile-detail';
+import { CreateGroupPage } from '../create-group/create-group';
 import { FriendCheckins } from '../../providers/friend-checkins/friend-checkins';
 import { NearbyCheckins } from '../../providers/nearby-checkins/nearby-checkins';
 import { User } from '../../providers/user/user';
@@ -52,5 +53,9 @@ export class HomePage {
         checkin.toasts.push(this.currentUser);
       }
     });
+  }
+
+  createGroup() {
+    this.nav.push(CreateGroupPage);
   }
 }

@@ -1,0 +1,21 @@
+<ion-navbar *navbar primary>
+  <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+</ion-navbar>
+
+<ion-content class="create-group" padding>
+
+  <p>
+    Create a group by giving it a unique name like "Family", "Beer Buddies", or "Besties".
+  </p>
+
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" value="" placeholder="Choose Group name..." [(ngModel)]="groupName"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button primary block [hidden]="!groupName">
+    Create Group
+  </button>
+
+</ion-content>

@@ -1,7 +1,7 @@
 <ion-navbar *navbar primary>
   <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
   <ion-buttons end>
-    <button [hidden]="homeSegments != 'groups'">
+    <button [hidden]="homeSegments != 'groups'" (click)="createGroup()">
       <ion-icon light name="list"></ion-icon>
     </button>
   </ion-buttons>
@@ -116,7 +116,7 @@
     <div class="groups" *ngSwitchWhen="'groups'">
       <ion-card class="card">
         <ion-card-content class="card-content">
-          <ion-item class="card-content-item">
+          <ion-item class="card-content-item" (click)="createGroup()">
             <ion-thumbnail item-left class="card-content-thumbnail">
               <ion-icon primary name="ios-help-circle-outline" class="card-content-icon"></ion-icon>
             </ion-thumbnail>
