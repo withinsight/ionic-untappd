@@ -1,0 +1,37 @@
+<ion-navbar *navbar primary>
+  <ion-title light>
+    Add Friends
+  </ion-title>
+  <ion-buttons end>
+    <button (click)="dismiss()">
+      <ion-icon light name="close"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-toolbar secondary>
+  <ion-searchbar></ion-searchbar>
+</ion-toolbar>
+
+<ion-content>
+
+  <ion-card class="card" *ngFor="let user of users">
+
+    <ion-list>
+      <ion-item class="list-item">
+        <ion-thumbnail item-left>
+          <img src="build/img/{{user.avatar}}">
+        </ion-thumbnail>
+        <ion-col item-left>
+          <h2>{{user.name}}</h2>
+          <p>{{user.locationAddress}}</p>
+        </ion-col>
+        <ion-checkbox item-right [(ngModel)]="friendsToAdd[user.userName]" (ngModelChange)="areFriendsAdded()"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+  <button primary block [hidden]="!showAddFriendBtn">Add Friend To List</button>
+
+</ion-content>

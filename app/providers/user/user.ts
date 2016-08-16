@@ -10,6 +10,17 @@ export class User {
     this.data = null;
   }
 
+  getUsers() {
+    return new Promise(resolve => {
+      this.http.get('build/api/user/mock-users.json')
+        .map(res => res.json())
+        .subscribe(data => {
+          this.data = data.users;
+          resolve(this.data);
+        });
+    });
+  }
+
   getUser(userName) {
     var userName = userName;
 

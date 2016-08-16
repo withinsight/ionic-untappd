@@ -14,7 +14,7 @@
     </ion-item>
   </ion-list>
 
-  <button primary block [hidden]="!groupName">
+  <button primary block [hidden]="!groupName" (click)="presentAddFriendModal()">
     Create Group
   </button>
 
