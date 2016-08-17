@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SettingsDetailPage } from '../../pages/settings-detail/settings-detail';
 import { RecentBeers } from '../../providers/recent-beers/recent-beers'
 
 @Component({
@@ -17,5 +18,9 @@ export class ProfilePage {
         this.userCheckins = beers;
       }
     });
+  }
+
+  openSettings() {
+    this.nav.push(SettingsDetailPage);
   }
 }
