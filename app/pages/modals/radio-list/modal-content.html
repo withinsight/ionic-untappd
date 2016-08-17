@@ -32,6 +32,6 @@
 
   </ion-card>
 
-  <button primary block [hidden]="!showAddFriendBtn">Add {{friendsToAdd | total}} Friend{{friendsToAdd | plural}} To List</button>
+  <button primary block [hidden]="!showAddFriendBtn" (click)="dismiss('groups')">Add {{friendsToAdd | total}} Friend{{friendsToAdd | plural}} To List</button>
 
 </ion-content>

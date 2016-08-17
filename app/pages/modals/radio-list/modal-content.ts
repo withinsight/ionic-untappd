@@ -20,7 +20,6 @@ export class RadioListModal {
     for (let user of this.users) {
       this.friendsToAdd[user.userName] = false;
     }
-
   }
 
   areFriendsAdded() {
@@ -34,8 +33,8 @@ export class RadioListModal {
     }
   }
 
-  dismiss() {
-    this.viewCtrl.dismiss();
+  dismiss(data) {
+    this.viewCtrl.dismiss(data);
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavParams, NavController } from 'ionic-angular';
 import { CheckinDetailPage } from '../checkin-detail/checkin-detail';
 import { ProfileDetailPage } from '../profile-detail/profile-detail';
 import { CreateGroupPage } from '../create-group/create-group';
@@ -14,12 +14,14 @@ import { User } from '../../providers/user/user';
 
 export class HomePage {
 
-  private homeSegments = 'friends';
+  private homeSegments;
   private friendCheckins = [];
   private nearbyCheckins = [];
   private currentUser = '';
 
-  constructor(private nav: NavController, private friendCheckinService: FriendCheckins, private nearbyCheckinService: NearbyCheckins, private userService: User) {
+  constructor(private navParams: NavParams, private nav: NavController, private friendCheckinService: FriendCheckins, private nearbyCheckinService: NearbyCheckins, private userService: User) {
+    this.homeSegments = this.navParams.data.homeSegments || 'friends';
+
     this.friendCheckinService.getFriendCheckins().then((checkins) => {
       if (checkins) {
         this.friendCheckins = checkins;

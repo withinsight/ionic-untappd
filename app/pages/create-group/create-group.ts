@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, Modal } from 'ionic-angular';
+import { HomePage } from '../home/home';
 import { RadioListModal } from '../modals/radio-list/modal-content';
 import { User } from '../../providers/user/user';
 
@@ -23,6 +24,15 @@ export class CreateGroupPage {
 
   presentAddFriendModal() {
     let addFriendModal = Modal.create(RadioListModal, this.users);
+
+    addFriendModal.onDismiss(data => {
+      if(data) {
+        this.nav.push(HomePage, {
+          homeSegments: data
+        });
+      }
+    });
+
     this.nav.present(addFriendModal);
   }
 
