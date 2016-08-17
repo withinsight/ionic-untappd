@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
+import { Total } from '../../../pipes/total.ts';
 
 @Component({
-  templateUrl: 'build/pages/modals/radio-list/modal-content.html'
+  templateUrl: 'build/pages/modals/radio-list/modal-content.html',
+  pipes: [Total]
 })
 
 export class RadioListModal {
