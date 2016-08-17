@@ -1,11 +1,11 @@
 import {Pipe} from '@angular/core';
 
 @Pipe({
-  name: 'total',
+  name: 'plural',
   pure: false
 })
 
-export class Total {
+export class Plural {
   transform(value) {
     var n = 0;
     for (let item in value) {
@@ -13,6 +13,8 @@ export class Total {
         n++;
       }
     }
-    return n;
+    if (n > 1) {
+      return 's';
+    }
   }
 }

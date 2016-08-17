@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
 import { Total } from '../../../pipes/total.ts';
+import { Plural} from '../../../pipes/plural.ts';
 
 @Component({
   templateUrl: 'build/pages/modals/radio-list/modal-content.html',
-  pipes: [Total]
+  pipes: [Total, Plural]
 })
 
 export class RadioListModal {
