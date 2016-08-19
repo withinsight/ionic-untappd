@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, Modal } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { RadioListModal } from '../modals/radio-list/modal-content';
 import { User } from '../../providers/user/user';
@@ -14,7 +14,7 @@ export class CreateGroupPage {
   public groupName: string;
   private users;
 
-  constructor(private nav: NavController, private userService: User) {
+  constructor(private nav: NavController, private userService: User, private modalCtrl: ModalController) {
     this.userService.getUsers().then((users) => {
       if (users) {
         this.users = users;
@@ -23,9 +23,9 @@ export class CreateGroupPage {
   }
 
   presentAddFriendModal() {
-    let addFriendModal = Modal.create(RadioListModal, this.users);
+    let addFriendModal = this.modalCtrl.create(RadioListModal, this.users);
 
-    addFriendModal.onDismiss(data => {
+    addFriendModal.onDidDismiss(data => {
       if(data) {
         this.nav.push(HomePage, {
           homeSegments: data
@@ -33,7 +33,7 @@ export class CreateGroupPage {
       }
     });
 
-    this.nav.present(addFriendModal);
+    addFriendModal.present();
   }
 
 }

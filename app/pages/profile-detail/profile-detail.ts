@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, NavController, ActionSheet } from 'ionic-angular';
+import { NavParams, NavController, ActionSheetController } from 'ionic-angular';
 import { User } from '../../providers/user/user';
 
 @Component({
@@ -12,7 +12,7 @@ export class ProfileDetailPage {
   private userName;
   private user = {};
 
-  constructor(private navParams: NavParams, public nav: NavController, private userService: User) {
+  constructor(private navParams: NavParams, public nav: NavController, private userService: User, private actionSheetCtrl: ActionSheetController) {
     this.userName = this.navParams.get('checkin').userName;
 
     this.userService.getUser(this.userName).then((user) => {
@@ -23,7 +23,7 @@ export class ProfileDetailPage {
   }
 
   friendActions() {
-    let actionSheet = ActionSheet.create({
+    let actionSheet = this.actionSheetCtrl.create({
       title: 'What would you like to do?',
       buttons: [
         {
@@ -46,7 +46,7 @@ export class ProfileDetailPage {
         }
       ]
     });
-  this.nav.present(actionSheet);
+    actionSheet.present();
   }
 
 }

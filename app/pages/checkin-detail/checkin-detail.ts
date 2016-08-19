@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, NavController, ActionSheet } from 'ionic-angular';
+import { NavParams, NavController, ActionSheetController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'build/pages/checkin-detail/checkin-detail.html',
@@ -20,7 +20,7 @@ export class CheckinDetailPage {
   private checkinLocationAddress;
   private checkinLocationCategory;
 
-  constructor(private navParams: NavParams, public nav: NavController) {
+  constructor(private navParams: NavParams, public nav: NavController, private actionSheetCtrl: ActionSheetController) {
 
     this.avatar = this.navParams.get('checkin').avatar;
     this.name = this.navParams.get('checkin').name;
@@ -39,7 +39,7 @@ export class CheckinDetailPage {
   }
 
   flagAction() {
-    let actionSheet = ActionSheet.create({
+    let actionSheet = this.actionSheetCtrl.create({
       title: 'What is wrong with this check-in?',
       buttons: [
         {
@@ -56,6 +56,6 @@ export class CheckinDetailPage {
         }
       ]
     });
-  this.nav.present(actionSheet);
+    actionSheet.present();
   }
 }
