@@ -1,18 +1,20 @@
-<ion-navbar *navbar primary>
-  <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
-  <ion-buttons end>
-    <button [hidden]="homeSegments != 'groups'" (click)="createGroup()">
-      <ion-icon light name="list"></ion-icon>
-    </button>
-  </ion-buttons>
-</ion-navbar>
-<ion-toolbar secondary class="toolbar--short">
-  <ion-segment [(ngModel)]="homeSegments" light>
-    <ion-segment-button value="friends">Friends</ion-segment-button>
-    <ion-segment-button value="nearby">Nearby</ion-segment-button>
-    <ion-segment-button value="groups">Groups</ion-segment-button>
-  </ion-segment>
-</ion-toolbar>
+<ion-header>
+  <ion-navbar primary>
+    <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+    <ion-buttons end>
+      <button [hidden]="homeSegments != 'groups'" (click)="createGroup()">
+        <ion-icon light name="list"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar secondary class="toolbar--short">
+    <ion-segment [(ngModel)]="homeSegments" light>
+      <ion-segment-button value="friends">Friends</ion-segment-button>
+      <ion-segment-button value="nearby">Nearby</ion-segment-button>
+      <ion-segment-button value="groups">Groups</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content class="home">
 

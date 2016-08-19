@@ -1,20 +1,22 @@
-<ion-navbar *navbar primary>
-  <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
-  <ion-buttons end>
-    <button>
-      <ion-icon light name="barcode" ios="ios-barcode-outline"></ion-icon>
-    </button>
-  </ion-buttons>
-</ion-navbar>
-<ion-toolbar secondary>
-  <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
-</ion-toolbar>
-<ion-toolbar secondary class="toolbar--short">
-  <ion-segment [(ngModel)]="searchSegments" light>
-    <ion-segment-button value="recent">Recent</ion-segment-button>
-    <ion-segment-button value="suggested">Suggested</ion-segment-button>
-  </ion-segment>
-</ion-toolbar>
+<ion-header>
+  <ion-navbar primary>
+    <ion-title><img src="build/img/logo.png" class="logo" /></ion-title>
+    <ion-buttons end>
+      <button>
+        <ion-icon light name="barcode" ios="ios-barcode-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar secondary>
+    <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
+  <ion-toolbar secondary class="toolbar--short">
+    <ion-segment [(ngModel)]="searchSegments" light>
+      <ion-segment-button value="recent">Recent</ion-segment-button>
+      <ion-segment-button value="suggested">Suggested</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content class="search">
 
